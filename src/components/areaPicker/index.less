@@ -1,0 +1,72 @@
+.address-picker-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  z-index: 888;
+  background: rgba(0, 0, 0, 0.7);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  visibility: hidden;
+  &.show {
+    visibility: visible;
+    .picker-content {
+      transform: translateY(0);
+      transition: all 0.4s ease;
+    }
+  }
+}
+
+.picker-content {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: #fff;
+  transform: translateY(150%);
+  transition: all 0.4s ease;
+  .picker-view-wrap {
+    width: 100%;
+    height: 40vh;
+  }
+}
+
+.picker-item {
+  line-height: 68px;
+  font-size: 32px;
+  text-align: center;
+}
+
+.dialog-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  &:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    border-bottom: 1PX solid #E5E5E5;
+    opacity: .6;
+  }
+  .dialog-title {
+    color: #333;
+    font-size: 32px;
+  }
+  .dialog-button {
+    display: inline-block;
+    text-align: center;
+    font-size: 32px;
+    color: #1AAD19;
+    padding: 24px 30px;
+    &.cancel {
+      color: #888;
+    }
+  }
+}

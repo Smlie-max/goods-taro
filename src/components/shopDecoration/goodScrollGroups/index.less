@@ -1,0 +1,75 @@
+.GoodScrollGroups {
+  white-space: nowrap;
+  background: white;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  .goods-item {
+    margin: 7px 7px;
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    margin-top: 20px;
+    box-shadow: #ebebeb 0 0 6px 4px;
+    background-color: white;
+    border-radius:10px; 
+    &:first-child{
+      margin-left: 14px;
+    }
+    &:last-child{
+      margin-right: 14px;
+    }
+    .goods-main{
+      // border:1PX solid rgba(220,220,220,1);
+      padding: 18px 13px 9px;
+    }
+    .goods-pic {
+      display: block;
+      border-top-left-radius:10px; 
+      border-top-right-radius:10px; 
+      width: 200px;
+      height: 200px;
+     
+    }
+    .xianshi{ 
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      top:0;
+      right:0;  
+      
+    }
+    .yingchang{
+      display: none;
+      width: 80px;
+      height: 80px;
+     position: absolute;
+    
+  }
+    .goods-name {
+      font-size: 23px;
+      color: #313131;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      height: 60px;
+      line-height: 30px;
+      white-space: initial;
+    }
+    .goods-price {
+      color: #1E3468;
+      font-size: 25px;
+      display: flex;
+      margin-top: 8px;
+      align-items: center;
+      justify-content: space-between;
+      .cartIcon{
+        display: block;
+        width: 48px;
+        height: 48px;
+      }
+    }
+  }
+}

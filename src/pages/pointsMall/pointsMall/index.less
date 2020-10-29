@@ -1,0 +1,211 @@
+.pointsMall {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 78px;
+  box-sizing: border-box;
+  background-color: #FAFAFA;
+  .header-bgc {
+    position: relative;
+    width: 100%; // 上半部分地面图
+    .banner {
+      width: 100%;
+      display: block;
+    }
+    .text-image {
+      width: 100%;
+      height: 100%;
+    } // 上板面
+    .card-bgc {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 46px 33px 29px 33px;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box; // 卡片定位
+      .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 33px 46px;
+        width: 100%;
+        height: 313px;
+        background: linear-gradient(-40deg, rgba(38, 66, 132, 0.3), rgba(30, 52, 104, 0));
+        box-shadow: 0px -7px 76px 0px rgba(0, 0, 0, 0.27);
+        box-sizing: border-box;
+        border-radius: 8px;
+        .card-top {
+          display: flex;
+          flex-direction: row;
+          flex: 1;
+          .info-contant {
+            flex: 1;
+            .title-contant {
+              width: 214px;
+              height: 50px;
+            }
+            .number-contant {
+              padding: 27px 2px;
+              font-size: 48px;
+              color: #fff;
+            }
+          }
+          .avtar-contant {
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            width: 88px;
+            height: 88px;
+            border-radius: 50%;
+            background-color: #fff;
+            overflow: hidden;
+            .avtar {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+        .card-button {
+          display: flex;
+          width: 100%;
+          height: 64px;
+        }
+        .button-item {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 28px;
+          width: 160px;
+          height: 64px;
+          border-radius: 32px;
+          background-color: #1F3569;
+          font-size: 21px;
+          color: #FFFFFF;
+          z-index: 99;
+        }
+      }
+      .boutique-contant {
+        position: absolute;
+        left: 32px;
+        bottom: 231px;
+        width: 214px;
+        height: 50px;
+        .boutique-image {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    } // 按鈕
+    .button-contant {
+      position: absolute;
+      bottom: 231px;
+      right: 32px;
+      width: 186px;
+      height: 40px;
+      border: 1px solid #FFFFFF;
+      border-radius: 20px;
+      font-weight: 400;
+      font-family: uDIN1451Mittelschrift;
+      color: #FFFFFF;
+      text-align: center;
+      line-height: 40px;
+      font-size: 24px;
+      z-index: 50;
+    }
+  } // 下面展示的内容
+  .main-contant {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 580px;
+    width: 100%; // 精选好物
+    .scrollview {
+      white-space: nowrap;
+      width: 100%;
+      box-sizing: border-box;
+      overflow-x: scroll;
+      .scroll-item {
+        display: inline-block;
+        margin: 0 18px;
+        padding: 14px 14px 23px;
+        width: 266px;
+        height: 418px;
+        box-sizing: border-box;
+        background-color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        .scroll-item-image {
+          width: 240px;
+          height: 240px;
+        }
+        .item-name {
+          display: -webkit-box;
+          padding: 0 10px;
+          width: 100%;
+          height: 72px;
+          white-space: normal;
+          word-break: break-all;
+          word-wrap: break-word;
+          color: #565656;
+          font-size: 22px;
+          box-sizing: border-box;
+          line-height: 36px;
+          font-weight: 400;
+          overflow: hidden;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          text-overflow: ellipsis;
+        } // 价钱框
+        .money-contant {
+          width: 100%;
+          height: 30px;
+          font-size: 24px;
+          font-family: PingFang-SC-Medium;
+          font-weight: 500;
+          color: rgba(30, 52, 104, 1);
+          line-height: 42px;
+        }
+      }
+    } // 优惠专区
+    .offer {
+      width: 100%;
+      background-color: #FAFAFA;
+      .offer-title-contant {
+        display: flex;
+        margin-top: 50px;
+        padding: 0px 32px;
+        width: 100%;
+        height: 47px;
+        box-sizing: border-box;
+        .image-contant {
+          width: 207px;
+          height: 47px;
+          .image {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .space-contant {
+          flex: 1;
+        }
+        .button-contant {
+          width: 186px;
+          height: 40px;
+          border: 1px solid rgba(30, 52, 104, 1);
+          border-radius: 20px;
+          font-weight: 400;
+          font-family: uDIN1451Mittelschrift;
+          color: rgba(13, 70, 127, 1);
+          text-align: center;
+          line-height: 40px;
+          font-size: 24px;
+        }
+      }
+      .list-contant {
+        margin-top: 20px;
+        width: 100%;
+      }
+    }
+  }
+}

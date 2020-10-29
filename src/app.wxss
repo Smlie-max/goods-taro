@@ -1,0 +1,22 @@
+page,
+body {
+  width: 100vw !important;
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.at-button--full {
+  border: none !important;
+}
+.h5Parse img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+.taro-scroll-content {
+  width: 100%;
+}

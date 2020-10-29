@@ -1,0 +1,95 @@
+.couponCenterView {
+  background-color: #F0F3F5;
+  min-height: 100vh;
+  box-sizing: border-box;
+  .CouponCenter {
+    height: 100vh;
+    padding: 78px 23px 0;
+    box-sizing: border-box;
+    .coupon {
+      background-color: #fff;
+      padding: 44px 44px 34px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin-top: 20px;
+      box-shadow: 0px 1px 7px 1px rgba(8, 21, 52, 0.1);
+      overflow: hidden;
+      &:before {
+        position: absolute;
+        left: -20px;
+        bottom: 40px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #F0F3F5;
+        content: '';
+      }
+      &:after {
+        position: absolute;
+        right: -20px;
+        bottom: 40px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #F0F3F5;
+        content: '';
+      }
+      .pic {
+        display: block;
+        width: 100px;
+        height: 100px;
+        flex-shrink: 0;
+        margin-right: 20px;
+      }
+      .right {
+        flex: 1;
+        .top {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          color: #1B1B1B;
+          font-size: 30px;
+          .tips {
+            color: #1E3468;
+            font-size: 22px;
+            margin-bottom: 15px;
+          }
+          .percent-view {
+            text-align: center;
+          }
+          .progress {
+            width: 150px;
+          }
+        }
+        .bottom {
+          margin-top: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .price {
+            color: #1E3468;
+            font-size: 40px;
+            margin-right: 17px;
+          }
+          .enough {
+            color: #1E3468;
+            font-size: 24px;
+            flex: 1;
+          }
+          .btn {
+            width: 140px;
+            height: 44px;
+            line-height: 44px;
+            text-align: center;
+            background: rgba(30, 52, 104, 1);
+            border-radius: 40px;
+            color: #fff;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.CouponsComponent {
+  background-color: #fff;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2vw 1vw;
+  width: 100vw;
+  overflow: hidden;
+  .line2 {
+    width: 47vw;
+  }
+  .line3 {
+    width: 30.6vw;
+  }
+  .coupon {
+    margin: 0 1vw;
+    background: #f55;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    margin-bottom: 2vw;
+    &:before {
+      position: absolute;
+      content: '';
+      left: -10px;
+      top: 50%;
+      margin-top: -10px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #fff;
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      right: -10px;
+      top: 50%;
+      margin-top: -10px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #fff;
+    }
+    .num {
+      font-size: 30px;
+      margin: 10px 0;
+    }
+    .get {
+      font-size: 20px;
+      border: 1PX solid #fff;
+      border-radius: 100px;
+      width: 120px;
+      line-height: 40px;
+      height: 40px;
+      margin: 10px auto 0;
+    }
+  }
+}

@@ -1,0 +1,99 @@
+.Remind {
+  // 预约
+  .remind-mask {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    visibility: hidden;
+    transition: visibility 100ms ease-in;
+    .remind-main {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 30px 0;
+      position: fixed;
+      transform: translate3d(0, 100%, 0);
+      transition: transform 300ms cubic-bezier(0.36, 0.66, 0.04, 1);
+      .closeIcon {
+        position: absolute;
+        top: 30px;
+        left: 37px;
+        display: block;
+        width: 42px;
+        height: 42px;
+      }
+      .title {
+        color: #000000;
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 35px;
+      }
+      .tips {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 400;
+        color: rgba(75, 55, 106, 1);
+        line-height: 30px;
+      }
+      .input-area {
+        margin-top: 57px;
+        background-color: #F1F1F1;
+        padding: 34px 88px;
+        text-align: center;
+        .input-view {
+          display: flex;
+          align-items: center;
+          &:nth-child(2) {
+            margin-top: 23px;
+          }
+          input {
+            width: 277px;
+            height: 47px;
+            line-height: 47px;
+            border: 1PX solid rgba(191, 191, 191, 1);
+            border-radius: 5px;
+            text-align: left;
+            color: #4B376A;
+            font-size: 30px;
+            padding-left: 10px;
+          }
+        }
+        .label {
+          color: #4B376A;
+          font-size: 30px;
+          width: 120px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-right: 29px;
+        }
+      }
+      .remind-btn {
+        width: 277px;
+        height: 71px;
+        border: 1PX solid rgba(191, 191, 191, 1);
+        border-radius: 5px;
+        text-align: center;
+        line-height: 71px;
+        color: #434343;
+        font-size: 24px;
+        margin-top: 67px;
+        background: none;
+        &:after {
+          border: none;
+        }
+      }
+    }
+  }
+  .isActive {
+    transform: translate3d(0, 0, 0) !important;
+    transition: transform 300ms cubic-bezier(0.36, 0.66, 0.04, 1) !important;
+    visibility: visible !important;
+  }
+}

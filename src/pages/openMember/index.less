@@ -1,0 +1,118 @@
+.openmemberWrap {
+  width: 100%;
+  overflow: hidden;
+  background: #FAFAFA;
+  box-sizing: border-box;
+  min-height: 100vh;
+  .card-view {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 578px;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    .card2 {
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      position: absolute;
+    }
+    .card1 {
+      position: absolute;
+      top: 78px;
+      left: 0;
+      z-index: 2;
+      height: 100%;
+      width: 100%;
+    }
+    .name-view {
+      color: #000000;
+      font-size: 28px;
+      z-index: 3;
+      text-align: center;
+      font-weight: bold;
+      line-height: 50px;
+    }
+    .bottom {
+      position: absolute;
+      left: 0;
+      bottom: 80px;
+      z-index: 3;
+      color: #000000;
+      font-size: 24px;
+      display: flex;
+      width: 90%;
+      align-items: center;
+      justify-content: flex-end;
+      .buy {
+        display: block;
+        width: 136px;
+        height: 38px;
+        line-height: 38px;
+        text-align: center;
+        border: 1PX solid #000000;
+        border-radius: 19px;
+        margin-left: 50px;
+      }
+    }
+  }
+  .open-member {
+    width: 477px;
+    margin: 40px auto;
+    display: block;
+  }
+  .list-view {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 0.5vw;
+    .list {
+      background-color: #fff;
+      padding: 32px 18px;
+      color: #434343;
+      font-size: 24px;
+      width: 30vw;
+      height: 420px;
+      box-sizing: border-box;
+      margin: 0 1.5vw 3vw;
+      .icon {
+        display: block;
+        margin: 0 auto;
+        width: 50px;
+        height: 50px;
+      }
+      .title {
+        display: block;
+        text-align: center;
+        padding: 25px 17px 38px;
+        min-height: 84px;
+        border-bottom: 1PX solid #BFBFBF;
+      }
+      .desc {
+        color: #898989;
+        font-size: 22px;
+        margin-top: 29px;
+        text-align: center;
+      }
+    }
+  }
+  .btn {
+    margin: 22px;
+    text-align: center;
+    line-height: 81px;
+    height: 81px;
+    color: #1E3468;
+    font-size: 30px;
+    border: 1PX solid rgba(30, 52, 104, 1);
+    border-radius: 2px;
+  }
+  .agreement {
+    color: #B9B9B9;
+    font-size: 22px;
+    text-align: center;
+    margin: 25px auto;
+  }
+}

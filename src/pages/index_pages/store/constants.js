@@ -1,0 +1,1 @@
+export const CHANGE_INDEX_DATA = 'index/CHANGE_INDEX_DATA';

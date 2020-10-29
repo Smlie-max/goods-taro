@@ -1,0 +1,222 @@
+.giftDetail{
+	background: #fff;
+	height: calc(100vh - 78px);
+	.bg{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 1;
+	}
+	.mailBg{
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		height: 481px;
+		left: 0;
+		z-index: 1;
+	}
+	.mail{
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		z-index: 3;
+		height: 276px;
+	}
+	.main{
+		position: relative;
+		margin: 200px 34px 0;
+		z-index: 2;
+		min-height: calc(100vh - 200px);
+		width: calc(100vw - 68px);
+		box-sizing: border-box;
+		text-align: center;
+		padding-bottom: 240px;
+		.paper{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+		}
+		.thumb{
+			width:156px;
+			height:156px;
+			border:3px solid rgba(226,190,145,1);
+			background:linear-gradient(-45deg,rgba(248,246,228,1),rgba(230,201,161,1),rgba(248,246,228,1));
+			border-radius:50%;
+			margin: -78px auto 40px;
+		}
+		.tips1{
+			color: #1E3468;
+			font-size: 40px;
+			margin-bottom: 27px;
+		}
+		.tips2{
+			color: #565656;
+			font-size: 30px;
+		}
+		.total{
+			margin-top: 70px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			color: #E2BE91;
+			font-size: 24px;
+			.txt{
+				flex-shrink: 0;
+				margin: 0 40px;
+			}
+			.line{
+				height: 2px;
+				background-color: #E2BE91;
+				width: 100%;
+			}
+		}
+		.gift-list{
+			margin-top: 30px;
+			padding: 0 40px;
+			.list{
+				background-color: #fff;
+				box-shadow:0px 7px 62px 0px rgba(67,44,15,0.08);
+				border-radius:6px;
+				padding: 22px;
+				display: flex;
+				align-items: center;
+				position: relative;
+				margin-bottom: 30px;
+				.getPic{
+					position: absolute;
+					top: 20px;
+					right: 20px;
+					width: 84px;
+					height: 84px;
+				}
+				.goods-pic{
+					flex-shrink: 0;
+					width: 166px;
+					height: 166px;
+					margin-right: 26px;
+				}
+				.goods-info{
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					width: 100%;
+					color: #1E3468;
+					font-size: 30px;
+					line-height: 40px;
+					.goods-title{
+						display: -webkit-box;
+						-webkit-box-orient: vertical;
+						-webkit-line-clamp: 3;
+						overflow: hidden;
+						text-align: left;
+						width: 80%;
+					}
+					.goods-counts{
+						color: #777777;
+						font-size: 28px;
+						flex-shrink: 0;
+					}
+				}
+			}
+		}
+	}
+	.receive-info{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background:rgba(0,0,0,0.7);
+		z-index: 999;
+		.receive-main{
+			background:rgba(255,255,255,1);
+			box-shadow:4px 1px 62px 0px rgba(9,26,49,0.08);
+			border-radius:30px 30px 0px 0px;
+			height: 38vh;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			left: 0;
+			padding: 24px 20px;
+			box-sizing: border-box;
+			.close{
+				width: 96px;
+				height: 18px;
+				display: block;
+				margin:0 auto;
+			}
+			.title{
+				color: #565656;
+				font-size: 28px;
+				padding: 0 40px;
+			}
+			.block{
+				background:rgba(245,247,249,1);
+				border-radius:10px;
+				padding: 53px 39px;
+				display: flex;
+				align-items: center;
+				flex-wrap: wrap;
+				margin: 30px 20px; 
+				.block-item{
+					width: 50%;
+					margin-top: 20px;
+					.item-title{
+						color: #1E3468;
+						font-size: 24px;
+					}
+					.value{
+						margin-top: 10px;
+						height: 50px;
+						line-height: 50px;
+						color: #565656;
+						font-size: 28px;
+						width: 90%;
+					}
+				}
+			}
+		}
+	}
+	.bottom-bar{
+		position: fixed;
+		bottom: 26px;
+		left: 0;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		z-index: 4;
+		.btn{
+			width:330px;
+			height:88px;
+			background:rgba(255,255,255,1);
+			box-shadow:0px 8px 57px 0px rgba(30,52,104,0.28);
+			border-radius:6px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 30px;
+			border: none;
+			outline: none;
+			&:after{
+				background:none;
+				border: 0;
+				padding: 0;
+				margin: 0;
+			}
+		}
+		.btn:nth-child(1){
+			background-color: #FFFFFF;
+			color: #565656;
+		}
+		.btn:nth-child(2){
+			background-color: #1E3468;
+			color: #ffffff;
+		}
+	}
+}

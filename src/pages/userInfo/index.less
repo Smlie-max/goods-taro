@@ -1,0 +1,37 @@
+.UserInfoWrap {
+  background: #F1F1F1;
+  min-height: 100vh;
+  box-sizing: border-box;
+  .thumb-view {
+    background-color: #fff;
+    padding-bottom: 88px;
+    position: relative;
+    z-index: 2;
+    padding-top: 135px;
+  }
+  .thumb {
+    display: block;
+    width: 169px;
+    height: 169px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .at-list {
+    margin-top: -2px;
+    position: relative;
+    z-index: 1;
+    border: none;
+  }
+  .at-list__item-extra {
+    flex: 2 !important;
+  }
+  .at-list__item:after {
+    left: -10px !important;
+    height: 1px;
+    background-color: #F1F1F1 !important;
+  }
+  .at-list__item .item-extra__info {
+    max-width: 400px !important;
+  }
+}

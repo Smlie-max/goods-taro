@@ -1,0 +1,619 @@
+// 主页页面
+.index{
+  width: 100vw;
+  height:100vh;
+  position: relative;
+  overflow: hidden;
+
+  .header{
+    width: 100vw;
+    .img1{
+      width: 100vw;
+      height: 340px;
+    }
+  }
+  .head{
+    width: 96%;
+    height: 120px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    line-height: 70px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Courier New';
+    font-weight: 300;
+    justify-content: space-between;
+    position: relative;
+    .biao{
+      width: 12%;
+      left: 0;
+      top:-10px;
+      height: 32px;
+      position: absolute;
+    }
+    .basic{
+      width:49%;
+      height: 100%;
+      margin-right:1%;
+      background-color: #dcdcdc;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      .left-btn{
+        width: 17%;
+        height: 40px;
+        position: absolute;
+        top: 65px;
+        left: 7%;
+      }
+      .left-free{
+        width: 17%;
+        height: 40px;
+        position: absolute;
+        top: 65px;
+        left: 26%;
+      }
+    }
+    .noble{
+      width: 49%;
+      margin-left: 1%;
+      height: 100%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      background-color: #f8f2da;
+      color: #604613;
+      .right-btn{
+        width: 17%;
+        height: 40px;
+        position: absolute;
+        top: 65px;
+        left: 57%;
+      }
+      .right-free{
+        width: 17%;
+        position: absolute;
+        top: 65px;
+        height: 40px;
+        left: 76%;
+      }
+    }
+  }
+  
+  .main{
+    width: 96%;
+    height: 42.5vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    .left{
+      width:49%;
+      height: 100%;
+      overflow: hidden;
+      margin-right:1%;
+      .base{
+        width:100%;
+        height: 500px;
+      }
+    }
+   .right{
+     width: 49%;
+     overflow: scroll;
+     margin-left: 1%;
+     height: 100%;
+     .vip{
+      overflow: scroll;
+      width:100%;
+      height: 500px;
+     }
+    }
+  }
+
+.footer{
+  position: absolute;
+  left: 2%;
+  bottom: 2%;
+  width: 96%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .contrast{
+    width: 100%;
+    height: 58px;
+    padding-top: 2%;
+  }
+  .protocol{
+    height: 56px;
+    width: 100%;
+    padding-top: 2.5%;
+  }
+}
+}
+
+
+.homeIcon {
+  position: fixed;
+  bottom: 120px;
+  right: 40px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  z-index: 101;
+  // box-shadow: 0 0 10px 5px#eee;
+}
+
+
+// 对比页面
+.comparison{
+  position: absolute;
+  top: 10%;
+  width: 96%;
+  height: 81vh;
+  left: 2%;
+  background-color:#fff;
+  z-index: 1000;
+  .comparison_head{
+    width: 100%;
+    height: 71px;
+  }
+  .open_return{
+    width: 16%;
+    height: 32px;
+    position: absolute;
+    right: -1%;
+    top: -2%;
+    z-index: 1001;
+  }
+  .comparison_main{
+    width: 100%;
+    overflow: scroll;
+    height:85%;
+    margin-bottom: 1%;
+    z-index: 100;
+  }
+  .comparison_main .comparison_main1{
+    width: 100%;
+    height: 1436px;
+  }
+  .l_btn{
+    width: 15%;
+    position: absolute;
+    top: 95%;
+    height: 31px;
+    right: 21%;
+  }
+  .r_btn{
+    width: 15%;
+    position: absolute;
+    top: 95%;
+    height: 31px;
+    right: 2%;
+  }
+}
+
+
+// 开通基础版
+.open-base{
+  position: absolute;
+  top: 10%;
+  width: 96%;
+  height: 81.5vh;
+  background-color: white;
+  z-index:1002;
+  left: 2%;
+  border: 1px solid #f1e3cb;
+  .open_head{
+    width: 94%;
+    z-index:200;
+    padding-left: 3%;
+    padding-top:3%;
+    height: 135px;
+  }
+  .open_head1{
+    width: 94%;
+    z-index:200;
+    padding-left: 3%;
+    padding-top:3%;
+    height: 173px;
+  }
+  .open_return{
+    width: 16%;
+    height: 32px;
+    position: absolute;
+    right: -1%;
+    top: -2%;
+    z-index: 1003;
+  }
+  .openbtn{
+    width: 94%;
+    padding-left: 3%;
+    padding-top: 1%;
+    height: 60px;
+  }
+  .basemain{
+    height: 57vh;
+    overflow: scroll;
+  .explain{
+    width: 94%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    font-family: "SourceHanSansSC";
+    font-size: 26px;
+    color: #757575;
+    line-height: 160%;
+  }
+}
+}
+
+// 开通vip
+.open-vip{
+  position: absolute;
+  top: 10%;
+  width: 96%;
+  height: 81.5vh;
+  background-color: white;
+  z-index:1002;
+  left: 2%;
+  border: 1px solid #f1e3cb;
+  .open_head{
+    width: 94%;
+    z-index:200;
+    padding-left: 3%;
+    padding-top:3%;
+    height: 125px;
+  }
+  .open_head1{
+    width: 94%;
+    z-index:200;
+    padding-left: 3%;
+    padding-top:3%;
+    height: 136px;
+  }
+  .open_return{
+    width: 16%;
+    height: 32px;
+    position: absolute;
+    right: -1%;
+    top: -2%;
+    z-index: 1003;
+  }
+  .vip-main{
+    height: 58vh;
+    overflow: scroll;
+    .explain{
+      width: 94%;
+      padding-left: 3%;
+      padding-right: 3%;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      font-family: "SourceHanSansSC";
+      font-size: 26px;
+      color: #757575;
+      line-height: 160%;
+      .explains{
+        padding-left: 8%;
+      }
+    }
+  }
+  .openbtn{
+    width: 94%;
+    padding-left: 3%;
+    padding-top: 1%;
+    height: 60px;
+  }
+}
+
+//协议页面
+.protocols{
+  position: absolute;
+  top: 10%;
+  width: 96%;
+  height: 81vh;
+  background-color: white;
+  z-index:1005;
+  left: 2%;
+  border: 1px solid #f1e3cb;
+  .protocoltwo{
+    width: 96%;
+    height: 74px;
+    padding-top: 2%;
+    padding-left: 2%;
+  }
+  .open_return{
+    width: 16%;
+    height: 32px;
+    position: absolute;
+    right: -1%;
+    top: -2%;
+    z-index: 1006;
+  }
+  .protocols-main{
+    height: 71vh;
+    z-index: 1003;
+    overflow: scroll;
+  }
+  .explain{
+    width: 94%;
+    text-indent:8%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-family: "SourceHanSansSC";
+    font-size: 26px;
+    color: #757575;
+    line-height: 160%;
+    text-align: justify;
+    text-justify: inter-ideograph;
+  }
+  .explain-line{
+    width: 90%;
+    text-indent:4%;
+    padding-left: 5%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-family: "SourceHanSansSC";
+    font-size: 26px;
+    color: #757575;
+    line-height: 160%;
+    text-align: justify;
+    text-justify: inter-ideograph;
+  }
+  .explain-line:last-child{
+    padding-bottom: 4%;
+  }
+  .rule{
+    font-size:32px;
+    color: #757575;
+    line-height: 160%;
+    padding-left: 3%;
+    padding-top: 1%;
+    font-family: "SourceHanSansSC";
+  }
+}
+
+// 前往升级页面
+.upgrade{
+  height: 100vh;
+  width: 100%;
+  background-color: #fffdf6;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  .upheader .upheader1{
+      width: 100%;
+      height: 423px;
+  }
+  .uphead{
+    width: 96%;
+    height: 125px;
+    margin: 0 auto;
+    margin-top: 10px;
+    position: relative;
+    .open-btn{
+      width: 20%;
+      position: absolute;
+      left: 41%;
+      top: 56%;
+      height: 43px;
+    }
+  }
+  .uphead .uphead1{
+    width: 100%;
+    height: 125px;
+  }
+  .upmain{ 
+    width: 96%;
+    overflow: scroll;
+    height: 34vh;
+    margin: 0 auto;
+  }
+  .upmain .upmain1{
+    width: 100%;
+    height: 456px;
+  }
+  .upfooter{
+    position: absolute;
+    left: 2%;
+    bottom: 2%;
+    width: 96%;
+    z-index: 1000;
+    .contrast{
+      width: 100%;
+      z-index: 1000;
+      height: 58px;
+      padding-top: 3%;
+    }
+    .protocol{
+      width: 100%;
+      z-index: 1000;
+      height: 55px;
+      padding-top: 1%;
+    }
+  }
+}
+
+
+// 升级vip页面
+.upgrade-vip{
+  position: absolute;
+  top: 10%;
+  width: 96%;
+  height: 81vh;
+  background-color: white;
+  z-index:1000;
+  left: 2%;
+  border: 1px solid #f1e3cb;
+  .open_head{
+    width: 96%;
+    padding-left: 2%;
+    padding-top:5%;
+    z-index:200;
+    height: 130px;
+  }
+  .open_return{
+    width: 16%;
+    height: 32px;
+    position: absolute;
+    right: -1%;
+    top: -2%;
+    z-index: 1001;
+  }
+  .vip-main{
+    height: 56vh;
+    overflow: scroll;
+    .explain{
+      width: 94%;
+      padding-left: 3%;
+      padding-right: 3%;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      font-family: "SourceHanSansSC";
+      font-size: 26px;
+      color: #757575;
+      line-height: 160%;
+      .explains{
+        padding-left: 8%;
+      }
+    }
+  }
+  .openbtn{
+    width: 94%;
+    padding-left: 3%;
+    padding-top: 0%;
+    height: 68px;
+  }
+}
+
+
+.success{
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: white;
+  .success_header .success_header1{
+    width: 100vw;
+    height: 425px;
+  }
+  .erweima{
+    margin-left: 5%;
+    width: 90%;
+    height: 635px;
+    margin-top: 0.5%;
+  }
+  .erweima .erweima1{
+    width: 100%;
+    height:  635px;
+  }
+  .scfooter{
+    position: absolute;
+    bottom: 1%;
+    margin-left: 5%;
+    width: 90%;
+  }
+  .scfooter .scfooter1{
+    width: 100%;
+    height: 56px;
+  }
+}
+
+
+.address{
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fffdf6;
+  z-index:2000;
+  .success_header{
+    width: 100vw;
+    height: 425px;
+  }
+  .success_header .success_header2{
+    width: 100vw;
+    height: 425px;
+  }
+
+  .address_info{
+    height: calc(100% - 670px);
+    .success_open{
+      margin-left: 22%;
+      width: 56%;
+      padding-top: 10px;
+    }
+    .success_open .success_open1{
+      width: 100%;
+      height: 36px;
+    }
+    .congratulation{
+      position: absolute;
+      top: 485px;
+      width: 70%;
+      height: 57px;
+      left: 15%;
+    }
+    .submits{
+      width: 30%;
+      margin-left: 35%;
+      margin-top: 10px;
+      height: 40px;
+    }
+    .info{
+      width: 96%;
+      margin-left: 2%;
+      height: calc(100% - 105px);
+      border: 1px solid #f8f2e7;
+      background-color: white;
+      border-radius: 20px;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      color: #ccc;
+      view{
+        width: 94%; 
+        margin-left: 3%;
+        font-size: 28px;    
+      }
+      .info-title{
+        padding-top: 35px;
+        color: #604613;
+      }
+      .detail{
+        overflow: scroll;  
+        height: calc(100% - 165px);
+      }
+      .detail View{
+        display: flex;
+        margin-left: 0% !important;
+        width: 96%;
+        border: 1px solid #ccc;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 10px;
+        padding-left: 2%;
+        border-radius: 10px;
+        background-color: #f5f5f5;
+      }
+      
+    }
+  }
+  
+  .scfooter{
+    position: absolute;
+    bottom: 10px;
+    margin-left: 3%;
+    width: 94%;
+    height: 250px;
+    .explain{
+      font-size: 22px;
+      text-align: justify;
+      text-justify: inter-ideograph;
+      margin-top: 10px;
+      color: #757575;
+    }
+  }
+}

@@ -1,0 +1,124 @@
+.EvaluateList {
+  height: 100vh;
+  background-color: #F4F6F8;
+  padding-top: 78px;
+  box-sizing: border-box;
+  .tabList {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 30px 10px;
+    .tab {
+      background: rgba(255, 255, 255, 1);
+      border-radius: 6px;
+      padding: 21px 28px;
+      color: #565656;
+      font-size: 24px;
+      margin-right: 20px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      .total {
+        margin-left: 18px;
+      }
+		}
+		.active{
+			background-color: #1E3468;
+			color: #fff;
+		}
+  }
+  .listBlock {
+    background-color: #fff;
+    padding: 30px 0 34px 30px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    .thumb {
+      flex-shrink: 0;
+      border-radius: 50%;
+      margin-right: 22px;
+      width: 64px;
+      height: 64px;
+    }
+    .right {
+      flex: 1;
+      .realname {
+        color: #1E3468;
+        font-size: 22px;
+      }
+      .comment {
+        margin-top: 20px;
+        padding-right: 30px;
+        font-size: 24px;
+        font-weight: 500;
+        color: rgba(86, 86, 86, 1);
+        line-height: 40px;
+      }
+      .img-view {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        .img {
+          display: block;
+          width: 158px;
+          height: 158px;
+          margin-right: 18px;
+        }
+      }
+      .boss-reply {
+        background-color: #F4F6F8;
+        padding: 10px 20px;
+        margin-top: 23px;
+        flex: 1;
+        position: relative;
+        &:after {
+          content: "";
+          width: 0px;
+          height: 0px;
+          display: block;
+          position: absolute;
+          z-index: 1;
+          top: -28px;
+          left: 26px;
+          border: 15px solid #FFF;
+          border-color: transparent transparent #F4F6F8;
+        }
+        .reply-title {
+          color: #565656;
+          font-size: 22px;
+        }
+        .reply-txt {
+          font-size: 24px;
+          font-weight: 500;
+          color: rgba(86, 86, 86, 1);
+          line-height: 40px;
+          margin-top: 10px;
+        }
+      }
+      .bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 16px;
+        padding-right: 20px;
+        .time {
+          color: #565656;
+          font-size: 22px;
+        }
+        .comment-btn {
+          width: 156px;
+          height: 48px;
+          background: rgba(255, 255, 255, 1);
+          border: 1px solid rgba(30, 52, 104, 1);
+          border-radius: 6px;
+          text-align: center;
+          line-height: 48px;
+          color: #565656;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}

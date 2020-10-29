@@ -1,0 +1,265 @@
+.cartWrap {
+  background: #F1F1F1;
+  min-height: 100vh;
+  padding-top: 78px;
+  box-sizing: border-box;
+  .at-input-number__input {
+    pointer-events: none;
+  }
+  .edit {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #1D3566;
+    font-size: 30px;
+    line-height: 78px;
+    padding-right: 30px;
+  }
+  .cart-empty {
+    padding-top: 78px;
+    background-color: #fff;
+    // border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 100px;
+    .empty-icon {
+      display: block;
+      margin: 119px auto 62px;
+      width: 185px;
+      height: 185px;
+    }
+    .empty-txt {
+      color: #1D3566;
+      font-size: 24px;
+      text-align: center;
+    }
+    .btn {
+      width: 225px;
+      height: 54px;
+      line-height: 54px;
+      text-align: center;
+      border: 2px solid rgba(30, 52, 104, 1);
+      border-radius: 2px;
+      font-size: 24px;
+      margin: 36px auto 0;
+      color: #1D3566;
+    }
+  }
+  .cart-list {
+    padding: 0 21px 21px;
+    box-sizing: border-box;
+    padding-bottom: 130px;
+    .list {
+      background-color: #fff;
+      overflow: hidden;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      .store-info {
+        color: #292929;
+        font-size: 28px;
+        padding: 18px 0 18px 18px;
+        display: flex;
+        align-items: center;
+        .select-icon {
+          display: inline-block;
+          width: 39px;
+          height: 39px;
+        }
+        .shop-name {
+          margin-left: 18px;
+        }
+        .shop {
+          color: #959595;
+          font-size: 24px;
+          margin-left: 18px;
+          flex: 1;
+        }
+        .get-coupon {
+          width: 84px;
+          height: 39px;
+          line-height: 39px;
+          text-align: center;
+          color: #fff;
+          font-size: 22px;
+          background: rgba(29, 53, 102, 1);
+        }
+      }
+      .goods-block {
+        position: relative;
+        box-sizing: border-box;
+        border-bottom: 1PX solid #E2E7EA;
+      }
+      .goods {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        padding: 24px 18px;
+        .no-stock {
+          width: 54px;
+          height: 35px;
+          background: rgba(255, 255, 255, 1);
+          border: 1PX solid rgba(176, 173, 173, 1);
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #989898;
+          font-size: 20px;
+        }
+        .left {
+          flex-shrink: 0;
+          width: 56px;
+          .select-icon {
+            display: block;
+            width: 39px;
+            height: 39px;
+          }
+        }
+        .goods-pic {
+          flex-shrink: 0;
+          width: 186px;
+          height: 186px;
+          padding: 0 24px;
+        }
+        .goods-info {
+          flex: 1;
+          box-sizing: border-box;
+          height: 186px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-start;
+          .goods-name {
+            color: #292929;
+            font-size: 22px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            line-height: 36px;
+            height: 72px;
+          }
+          .goods-options {
+            // margin-top: 14px;
+            color: #757575;
+            font-size: 22px;
+            flex: 1;
+          }
+          .sui {
+            color: #B9B9B9;
+            font-size: 22px;
+            line-height: 1.4;
+          }
+          .stock-tips {
+            color: #292929;
+            font-size: 24px;
+          }
+          .goods-price {
+            color: #1D3566;
+            width: 100%;
+            font-size: 24px;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .yuan {
+              margin-left: 18px;
+              color: #757575;
+              text-decoration: line-through;
+            }
+            .at-input-number__btn {
+              color: #fff;
+              padding: 0 12px;
+              background-color: #1D3566;
+            }
+            .at-icon {
+              font-size: 24px !important;
+            }
+            .at-input-number {
+              border: 1PX solid #AAAAAA;
+              border-radius: 0;
+            }
+            .at-input-number__input {
+              border: 0;
+              width: 80px !important;
+            }
+          }
+        }
+      }
+      .goods-tip {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        background: #F6F9FB;
+        padding: 16px 28px 16px 21px;
+        margin: 14px 0 14px 81px;
+        color: #292929;
+        position: relative;
+        .title {
+          background-color: #0D467F;
+          font-size: 20px;
+          color: #fff;
+          min-width: 102px;
+          height: 40px;
+          line-height: 40px;
+          border-radius: 50px;
+          margin-right: 20px;
+          padding: 0 16px;
+          box-sizing: border-box;
+          text-align: center;
+        }
+        .tip {
+          color: #292929;
+          font-size: 22px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          flex: 1;
+          padding-right: 20px;
+        }
+        .goBuy {
+          color: #0D467F;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+  .bar-bottom {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    color: #292929;
+    font-size: 24px;
+    box-sizing: border-box;
+    .bar-left {
+      display: flex;
+      align-items: center;
+    }
+    .all-select {
+      display: block;
+      width: 39px;
+      height: 39px;
+      margin: 0 20px 0 0;
+      flex-shrink: 0;
+    }
+    .total-view {
+      margin-left: 30px;
+    }
+    .btn-view {
+      display: flex;
+      align-items: center;
+      .btn {
+        height: 98px;
+        line-height: 98px;
+        color: #fff;
+        width: 180px;
+        text-align: center;
+        background: #1E3468;
+      }
+    }
+  }
+}

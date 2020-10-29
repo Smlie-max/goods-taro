@@ -1,0 +1,175 @@
+.distributionOrderWrap {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 78px;
+  background-color: #F4F6F8;
+  box-sizing: border-box;
+  .noData{
+    margin-top: 200px;
+  }
+  .main-contant {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    .money-contant {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0 20px;
+      box-sizing: border-box;
+      background-color: #F4F6F8;
+      position: fixed;
+      top: 78px;
+      left: 0;
+      z-index: 2;
+      .moneyWrap{
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+        height: 120px;
+        padding: 0 27px;
+        margin-top: 22px;
+      }
+      .title {
+        font-size: 24px;
+        font-family: PingFang-SC-Regular;
+        font-weight: 400;
+        color: rgba(86, 86, 86, 1);
+        line-height: 40px;
+      }
+      .number {
+        flex: 1;
+        text-align: end;
+        font-size: 48px;
+        font-family: PingFang-SC-Regular;
+        font-weight: 400;
+        color: rgba(30, 52, 104, 1);
+        line-height: 40px;
+      }
+    }
+    .type-contant {
+      display: flex;
+      width: 100%;
+      top:220px;
+      .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        .title {
+          font-size: 30px;
+          font-family: PingFang-SC-Medium;
+          font-weight: 500;
+          color: rgba(86, 86, 86, 1);
+          line-height: 40px;
+        }
+        .line {
+          margin-top: 20px;
+          width: 33px;
+          height: 8px;
+        }
+        .highLight {
+          background: rgba(30, 52, 104, 1);
+        }
+        .highLight-color {
+          color: rgba(30, 52, 104, 1);
+        }
+      }
+    }
+    .card-contant {
+      flex: 1;
+      width: 100%;
+      height: calc(100% - 320px);
+      position: fixed;
+      top: 320px;
+      left: 0;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0 20px;
+      .card {
+        margin-top: 30px;
+        padding: 30px;
+        width: 100%;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 6px;
+        box-sizing: border-box;
+        .row {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          .title {
+            font-size: 30px;
+            font-family: PingFang-SC-Regular;
+            font-weight: 400;
+            color: rgba(30, 52, 104, 1);
+            line-height: 40px;
+          }
+          .money {
+            padding-left: 20px;
+            flex: 1;
+            font-size: 30px;
+            font-family: PingFang-SC-Regular;
+            font-weight: 400;
+            color: rgba(86, 86, 86, 1);
+            line-height: 40px;
+          }
+          .status {
+            font-size: 30px;
+            font-family: PingFang-SC-Medium;
+            font-weight: 500;
+            color: rgba(30, 52, 104, 1);
+            line-height: 40px;
+          }
+          .img {
+            width: 16px;
+            height: 16px;
+          }
+        }
+        .time {
+          margin-top: 15px;
+          margin-bottom: 15px;
+          font-size: 24px;
+          font-family: PingFang-SC-Regular;
+          font-weight: 400;
+          color: rgba(185, 185, 185, 1);
+          line-height: 40px;
+        }
+      }
+    }
+    .loading {
+      margin-top: 300px;
+      width: 100%;
+      text-align: center;
+      color: rgba(30, 52, 104, 1);
+    }
+    .total-contant {
+      display: flex;
+      align-items: center;
+      padding: 25px 23px 0 23px;
+      width: 100%;
+      box-sizing: border-box;
+      border-top: 1px solid #F4F6F8;
+      .title {
+        flex: 1;
+        text-align: end;
+        font-size: 30px;
+        font-family: PingFang-SC-Regular;
+        font-weight: 400;
+        color: rgba(86, 86, 86, 1);
+        line-height: 40px;
+      }
+      .money {
+        padding-left: 20px;
+        font-size: 30px;
+        font-family: PingFang-SC-Regular;
+        font-weight: 400;
+        color: rgba(12, 62, 124, 1);
+        line-height: 40px;
+      }
+    }
+  }
+}

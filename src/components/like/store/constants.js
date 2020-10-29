@@ -1,0 +1,1 @@
+export const CHANGE_LIKE_DATA = 'like/CHANGE_LIKE_DATA';

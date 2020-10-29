@@ -1,0 +1,274 @@
+.OrderRedPacket {
+  min-height: 100vh;
+  background-color: #101724;
+  padding-bottom: 138px;
+	box-sizing: border-box;
+	padding-bottom: 200px;
+	padding-top: 78px;
+  .homeIcon {
+    position: fixed;
+    bottom: 120px;
+    right: 40px;
+    display: block;
+    width: 100px;
+		height: 100px;
+		z-index: 3;
+  }
+  .banner {
+    display: block;
+    width: 100%;
+  }
+  .block-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 37px 0;
+    &:after {
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: 0;
+      width: 100%;
+      background: #35445E;
+      height: 2px;
+      z-index: 1;
+    }
+    .txt {
+      color: #FFFFFF;
+      font-size: 24px;
+      background-color: #1E2A3F;
+      line-height: 48px;
+      height: 48px;
+      text-align: center;
+      padding: 0 20px;
+      z-index: 2;
+    }
+  }
+  .main {
+    box-sizing: border-box;
+    margin: 20px;
+    background-color: #1E2A3F;
+    border-radius: 20px;
+    padding: 40px 30px;
+    .title {
+      text-align: center;
+      color: #FFFFFF;
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+    .coupon-empty {
+      color: #1E3468;
+      font-size: 30px;
+      position: relative;
+      z-index: 2;
+    }
+    .packet-view {
+      width: 647px;
+      height: 260px;
+      margin-bottom: 16px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-sizing: border-box;
+      padding: 60px 37px;
+      .redpacket {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+      .packet-left {
+        width: 400px;
+        position: relative;
+        z-index: 2;
+        .info {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          color: #1E2A3F;
+          font-size: 30px;
+          .info-left {
+            .man {
+              color: #564A3B;
+              font-size: 24px;
+              margin-top: 20px;
+            }
+          }
+          .money {
+            color: #D73B3B;
+            font-size: 58px;
+          }
+        }
+        .time {
+          margin-top: 39px;
+          height: 36px;
+          line-height: 36px;
+          background: rgba(253, 253, 253, 1);
+          border-radius: 18px;
+          padding: 0 32px;
+          color: #1E2A3F;
+          font-size: 22px;
+        }
+      }
+      .packet-right {
+        flex-shrink: 0;
+        position: relative;
+        z-index: 2;
+        .btn {
+          display: block;
+          width: 96px;
+          height: 99px;
+        }
+      }
+    }
+    .coupon-view {
+      position: relative;
+      width: 642px;
+      height: 191px;
+      padding: 37px 37px 0;
+      box-sizing: border-box;
+      margin-bottom: 30px;
+      .couponBg {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .coupon-info {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .coupon-type {
+          color: #1E2A3F;
+          font-size: 30px;
+          margin-bottom: 19px;
+        }
+        .coupon-man {
+          color: #564A3B;
+          font-size: 24px;
+        }
+        .coupon-money {
+          color: #D73B3B;
+          font-size: 58px;
+          flex-shrink: 0;
+        }
+      }
+      .coupon-time {
+        color: #1E2A3F;
+        font-size: 22px;
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
+        line-height: 50px;
+        height: 50px;
+      }
+    }
+    .coupon-view:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .receive-list {
+    box-sizing: border-box;
+    margin: 40px 20px 20px;
+    background-color: #1E2A3F;
+    border-radius: 20px;
+    padding: 0 30px 40px 30px;
+    .list {
+      display: flex;
+      align-items: center;
+      margin-bottom: 53px;
+      .thumb {
+        display: block;
+        flex-shrink: 0;
+        width: 88px;
+        height: 88px;
+        margin-right: 42px;
+        border-radius: 50%;
+      }
+      .receive-info {
+        width: 100%;
+      }
+      .user {
+        margin-bottom: 19px;
+      }
+      .user,
+      .time-view {
+        overflow: hidden;
+        font-size: 24px;
+        color: #fff;
+        .item-left {
+          float: left;
+        }
+        .item-right {
+          float: right;
+        }
+        .time {
+          color: #546179;
+          float: left;
+        }
+        .best {
+          float: right;
+          width: 138px;
+          height: 35px;
+          text-align: center;
+          line-height: 35px;
+          background: rgba(30, 52, 104, 1);
+          border-radius: 18px;
+          color: #fff;
+        }
+      }
+    }
+    .list:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .rule-view {
+    box-sizing: border-box;
+    margin: 40px 20px 20px;
+    background-color: #1E2A3F;
+    border-radius: 20px;
+    padding: 0 30px 40px 30px;
+    .txt {
+      font-size: 22px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 1);
+      line-height: 48px;
+    }
+  }
+  .share {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: rgba(30, 52, 104, 1);
+    color: #fff;
+    font-size: 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    text-align: center;
+    border: none;
+    outline: none;
+  }
+  .share:after {
+    border: none;
+  }
+}
+
+.PacketLoaging {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

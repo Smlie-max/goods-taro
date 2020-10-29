@@ -1,0 +1,88 @@
+.orderIntegral {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  padding: 105px 20px 0 20px;
+  box-sizing: border-box;
+  background-color: #FAFAFA;
+  .scrollView{
+    flex: 1;
+    width: 100%;
+    overflow: hidden;
+  }
+  .card-menu {
+    margin-bottom: 20px;
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 6px;
+    .card-list {
+      width: 100%;
+      .order-contant {
+        display: flex;
+        padding: 30px;
+        width: 100%;
+        height: 150px;
+        box-sizing: border-box;
+        border-bottom: 1px solid rgba(244, 246, 248, 1);
+        .number-contant {
+          flex: 1;
+          .number-row {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            .order {
+              font-size: 30px;
+              font-family: PingFang-SC-Regular;
+              font-weight: 400;
+              color: rgba(86, 86, 86, 1);
+              line-height: 40px;
+            }
+            .number {
+              padding-left: 25px;
+              box-sizing: border-box;
+              font-size: 30px;
+              font-family: PingFang-SC-Regular;
+              font-weight: 400;
+              color: rgba(12, 62, 124, 1);
+              line-height: 40px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden;
+            }
+          }
+          .time {
+            margin-top: 20px;
+            font-size: 24px;
+            font-family: PingFang-SC-Regular;
+            font-weight: 400;
+            color: rgba(185, 185, 185, 1);
+            line-height: 40px;
+          }
+        }
+        .status {
+          display: flex;
+          height: 40px;
+          align-items: center;
+          font-size: 30px;
+          font-family: PingFang-SC-Medium;
+          font-weight: 500;
+          color: rgba(30, 52, 104, 1);
+          line-height: 40px;
+          .text {
+            padding: 0 10px;
+          }
+          .img {
+            width: 14px;
+            height: 14px;
+          }
+        }
+      }
+    }
+    .goods-contant {
+      padding: 35px;
+      box-sizing: border-box;
+    }
+  }
+}

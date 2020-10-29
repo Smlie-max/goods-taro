@@ -1,0 +1,300 @@
+
+.ad-pic {
+  width: 562.5px;
+  height:135.721px;
+  position: absolute;
+  right: 17px;
+  top:179px;
+}
+.categoryWrap {
+  height: 100vh;
+  overflow: hidden;
+  .top_bar {
+    float: right;
+    height: 460px;
+   width: 75%;
+    
+  
+  }
+    
+  .search-view {
+    background: rgba(0, 0, 0, 0.66);
+    box-shadow: 0px 2px 4px 0px rgba(44, 62, 52, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    .search {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+      height: 60px;
+      line-height: 60px;
+      background: rgba(243, 244, 245, 1);
+      border-radius: 4px;
+      box-sizing: border-box;
+      padding: 0 30px;
+      color: #B9B9B9;
+      font-size: 22px;
+      .searchIcon {
+        display: block;
+        flex-shrink: 0;
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+  .switchTabWrap {
+    .switchTab {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height:50px;
+      background: rgba(248, 248, 248, 1);
+      font-size: 30px;
+      font-weight: 500;
+      color: rgba(41, 41, 41, 1);
+       padding: 14px 0;
+    position: absolute;
+    top: 78px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+      .tab {
+        line-height: 77px;
+        position: relative;
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background-color: #03265B;
+          height: 2PX;
+          transform: scaleX(0);
+          transition: all .15s;
+        }
+        &:first-child {
+          margin-right: 100px;
+          &:before {
+            content: '';
+            position: absolute;
+            right: -100px;
+            width: 1PX;
+            height: 32px;
+            top: 50%;
+            margin-top: -16px;
+            background: rgba(248, 248, 248, 1);
+          }
+        }
+        &:last-child {
+          margin-left: 100px;
+        }
+      }
+      .active {
+        position: relative;
+        color: #03265B;
+        &:after {
+          background-color: #03265B;
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+  .categorySwitchTab {
+    transform: translateX(-100%);
+    transition: all .15s;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    color: #292929;
+    .nav_left {
+      display: inline-block;
+      width: 20%;
+      background: #D3D6DD;
+      text-align: center;
+      position: absolute;
+      left: 0;
+      top:181px;
+      z-index: 222;
+      height: calc(100vh);
+      .nav_left_items {
+        height: 105px;
+        line-height: 120px;
+        font-size: 26px;
+        font-weight: 500;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding: 0 15px;
+        position: relative;
+        box-sizing: border-box;
+        transition: background-color .2s ease-in-out;
+        &:after {
+          position: absolute;
+          bottom: 0;
+          left: 32%;
+          width: 36%;
+          height: 1PX;
+          background-color: rgba(41, 41, 41, .2);
+          content: '';
+        }
+      }
+      .nav_left_items:last-child {
+        &:after {
+          height: 0;
+        }
+      }
+      .active {
+        background: #fff;
+        position: relative;
+        &:after {
+          height: 0;
+        }
+      }
+    }
+    .nav_right {
+      position: absolute;
+      top:409px;
+      right: 17px;
+      flex: 1;
+      width: 75%;
+      box-sizing: border-box;
+      background: #fff;
+      height: calc(100vh - 408px);
+      align-items: center;
+      box-sizing: border-box;
+      .right_content {
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 30px 10px;
+        
+      }
+      .nav_right_items {
+        font-size: 20px;
+        .logo {
+          display: inline-block;
+          width: 160px;
+          height: 160px;
+          background-color: #D3D6DD;
+          border-radius: 6px;
+        }
+        .txt {
+          border-left:4px solid #03265B;
+          padding-left:30px;  
+          margin-bottom:15px; 
+          font-size:32px;
+          height: 42px;
+        line-height: 37px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          
+        }
+      }
+    }
+    .reclassify{
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom:15px; 
+      display: flex;
+    }
+      .sanjifenlei{
+        width: 33%;
+        margin-bottom:20px; 
+        .logo {
+          display: inline-block;
+          width: 160px;
+          height: 160px;
+         
+          background-color: #D3D6DD;
+          border-radius: 6px;
+        }
+        .sss {
+          width: 160px;
+          font-size:24px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-align: center;
+          text-overflow: ellipsis;
+        
+        }
+      }
+    
+    .nodata_text {
+      color: #292929;
+      font-size: 28px;
+      text-align: center;
+      position: absolute;
+      width: 75%;
+      right: 0;
+      top: 0;
+    }
+  }
+  // 品牌索引
+  .brandListWrap {
+    transform: translateX(100%);
+    transition: all .15s;
+    .brandList {
+      height: calc(100vh);
+      position: absolute;
+      top:191px;
+    }
+    .indexes_menu {
+      position: absolute;
+      top:660px;
+      right: 10px;
+      overflow: hidden;
+      -webkit-transform: translate3d(0, -50%, 0);
+      transform: translate3d(0, -50%, 0);
+      z-index: 805;
+      color: #292929;
+      font-size: 30px;
+      width: 40px;
+      text-align: center;
+      .indexList {
+        margin: 5px 0;
+      }
+    }
+    .list-title {
+      text-align: center;
+      color: #292929;
+      font-size: 28px;
+      line-height: 90px;
+      height: 90px;
+    }
+    .list {
+      display: flex;
+      align-items: center;
+      padding: 0 30px;
+      height: 120px;
+    }
+    .list-logo {
+      display: block;
+      flex-shrink: 0;
+      margin-right: 80px;
+      width: 80px;
+      height: 80px;
+      background-color: #D3D6DD;
+      border-radius: 6px;
+    }
+    .list-name {
+      font-size: 29px;
+      line-height: 60px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  .cbShow {
+    transform: translateX(0);
+  } 
+}
+
+  

@@ -1,0 +1,175 @@
+.main {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 78px;
+  box-sizing: border-box;
+  background-color: #FAFAFA;
+  .type-contant {
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+      .title {
+        font-size: 30px;
+        font-family: PingFang-SC-Medium;
+        font-weight: 500;
+        color: rgba(86, 86, 86, 1);
+        line-height: 40px;
+      }
+      .line {
+        margin-top: 20px;
+        width: 33px;
+        height: 8px;
+      }
+      .highLight {
+        background: rgba(30, 52, 104, 1);
+      }
+      .highLight-color {
+        color: rgba(30, 52, 104, 1);
+      }
+    }
+  }
+  .total-contant {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    .total {
+      display: flex;
+      justify-content: center;
+      padding: 18px 0;
+      width: 100%;
+      font-size: 30px;
+      font-family: PingFang-SC-Medium;
+      font-weight: 500;
+      color: rgba(12, 62, 124, 1);
+      line-height: 40px;
+      background: rgba(255, 255, 255, 1);
+      border-radius: 10px;
+    }
+  }
+  .menu-contant {
+    flex: 1;
+    width: 100%;
+    padding: 10px 35px;
+    box-sizing: border-box;
+    .item {
+      padding: 40px 36px;
+      margin-bottom: 30px;
+      box-sizing: border-box;
+      background: rgba(255, 255, 255, 1);
+      border-radius: 6px;
+      .row {
+        position: relative;
+        display: flex;
+        width: 100%;
+      }
+      .bottom-row {
+        display: flex;
+        margin-top: 30px;
+        width: 100%;
+      }
+      .title-contant {
+        flex: 1;
+        .name {
+          font-size: 30px;
+          font-family: PingFang-SC-Medium;
+          font-weight: 500;
+          color: rgba(12, 62, 124, 1);
+          line-height: 40px;
+        }
+        .time-contant {
+          display: flex;
+          margin-top: 20px;
+          width: 100%;
+          .title {
+            font-size: 24px;
+            font-family: PingFang-SC-Regular;
+            font-weight: 400;
+            color: rgba(86, 86, 86, 1);
+            line-height: 40px;
+          }
+          .value {
+            padding-left: 37px;
+            font-size: 24px;
+            font-family: PingFang-SC-Regular;
+            font-weight: 400;
+            color: rgba(185, 185, 185, 1);
+            line-height: 40px;
+          }
+        }
+      }
+      .level-contant {
+        position: absolute;
+        top: 76px;
+        right: -4px;
+        width: 100px;
+        height: 40px;
+        background: rgba(36, 79, 132, 1);
+        border-radius: 10px;
+        font-size: 24px;
+        font-family: PingFang-SC-Medium;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 1);
+        line-height: 40px;
+        text-align: center;
+      }
+      .avatar {
+        width: 88px;
+        height: 88px;
+        border-radius: 50%;
+        overflow: hidden;
+        .img {
+          width: 88px;
+          height: 88px;
+        }
+      }
+      .lattice {
+        display: flex;
+        flex-direction: column;
+        width: 120px;
+        .title {
+          font-size: 24px;
+          font-family: PingFang-SC-Regular;
+          font-weight: 400;
+          color: rgba(86, 86, 86, 1);
+          line-height: 40px;
+        }
+        .value {
+          margin-top: 12px;
+          font-size: 30px;
+          font-family: PingFang-SC-Medium;
+          font-weight: 500;
+          color: rgba(12, 62, 124, 1);
+          line-height: 40px;
+        }
+      }
+      .consumption {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        .title {
+          font-size: 24px;
+          font-family: PingFang-SC-Regular;
+          font-weight: 400;
+          color: rgba(86, 86, 86, 1);
+          line-height: 40px;
+        }
+        .value {
+          margin-top: 15px;
+          font-size: 30px;
+          font-family: PingFang-SC-Medium;
+          font-weight: 500;
+          color: rgba(12, 62, 124, 1);
+          line-height: 40px;
+        }
+      }
+    }
+  }
+}

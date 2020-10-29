@@ -1,0 +1,80 @@
+.BrandDetail {
+  background-color: #FAFAFA;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  .collect {
+    position: absolute;
+    top: 120px;
+    right: 40px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    z-index: 99;
+  }
+  .title-view {
+    text-align: center;
+    .en {
+      color: #868484;
+      font-size: 24px;
+    }
+    .cn-view {
+      color: #313131;
+      font-size: 30px;
+      margin-top: 10px;
+      position: relative;
+      display: inline-block;
+      .line {
+        position: absolute;
+        bottom: 0;
+        width: 180%;
+        height: 17px;
+        left: -40%;
+        z-index: -1;
+      }
+    }
+  }
+  .list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 0 2vw;
+    margin: 40px 0;
+    .block {
+      width: 30vw;
+      background-color: #fff;
+      margin: 0 1vw;
+      .goods-pic {
+        display: block;
+        width: 30vw;
+        height: 30vw;
+      }
+      .goods-name {
+        margin-top: 20px;
+        font-size: 24px;
+        color: #313131;
+        height: 48px;
+        line-height: 24px;
+        overflow: hidden;
+      }
+      .bottom {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 16px;
+        color: #1E3468;
+        font-size: 24px;
+        padding: 0 10px;
+        box-sizing: border-box;
+        .cartIcon {
+          display: block;
+          width: 34px;
+          height: 34px;
+          flex-shrink: 0;
+        }
+      }
+    }
+  }
+}

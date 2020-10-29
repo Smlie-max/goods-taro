@@ -1,0 +1,2 @@
+export const CHANGE_MENU_DATA = 'menu/CHANGE_MENU_DATA';
+export const CHANGE_MENU_POSITION = 'menu/CHANGE_MENU_POSITION';

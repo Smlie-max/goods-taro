@@ -1,0 +1,73 @@
+.NavbarView {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 199;
+  width: 100%;
+  .navbar-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 78px;
+    width: 90px;
+  }
+  .searchIcon {
+    display: block;
+    width: 34px;
+    height: 34px;
+  }
+  .navbar-scrollview {
+    display: flex;
+    white-space: nowrap;
+    height: 78px;
+    color: #FFFFFF;
+    font-size: 28px;
+    width: calc(100% - 90px);
+    .nav {
+      padding: 0 38px;
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      height: 78px;
+      box-sizing: border-box;
+      &:after {
+        content: '';
+        background-color: rgba(248, 248, 248, 0.2);
+        width: 2px;
+        top: 30%;
+        height: 40%;
+        position: absolute;
+        right: 0;
+      }
+      .block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        box-sizing: border-box;
+        height: 100%;
+      }
+      .cn {
+        line-height: 39px;
+      }
+      .en {
+        font-size: 16px !important;
+        line-height: 1;
+      }
+      .nav_line {
+        height: 6px;
+        margin-top: 10px;
+        background: rgba(255, 128, 65, 1);
+        width: 100%;
+      }
+    }
+    .nav:last-child {
+      &:after {
+        width: 0;
+      }
+    }
+  }
+}

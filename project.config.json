@@ -1,0 +1,50 @@
+{
+	"miniprogramRoot": "dist/",
+	"projectname": "FDG",
+	"description": "fdg",
+	"appid": "wx67f4bc4e44958a17",
+	"setting": {
+		"urlCheck": true,
+		"es6": false,
+		"postcss": false,
+		"minified": false,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 1,
+			"list": [
+				{
+					"id": -1,
+					"name": "会员开卡",
+					"pathName": "pages/member/index",
+					"query": "id=1&__key_=15611029983673",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的小店",
+					"pathName": "pages/commission/myShop/index",
+					"query": "__key_=15612528524813",
+					"scene": null
+				}
+			]
+		}
+	}
+}

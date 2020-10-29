@@ -1,0 +1,155 @@
+.MyBargain {
+  box-sizing: border-box;
+  background: #F5F7F9;
+  .navbar-view {
+    display: flex;
+    align-items: center;
+    color: #565656;
+    font-size: 30px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    .navbar-bar {
+      flex: 1;
+      text-align: center;
+      position: relative;
+      line-height: 100px;
+      height: 100px;
+    }
+    .active {
+      position: relative;
+      color: #1E3468;
+      &:after {
+        position: absolute;
+        content: '';
+        height: 8px;
+        width: 34px;
+        left: 50%;
+        bottom: 0;
+        margin-left: -17px;
+        background: #1E3468;
+      }
+    }
+  }
+  .scrollview {
+    padding-top: 100px;
+    box-sizing: border-box;
+    height: 100vh;
+    .at-count-down--card .at-count-down__time-box::after,
+    .at-divider__line {
+      height: 0 !important;
+    }
+    .at-count-down--card .at-count-down__time-box {
+      color: #fff;
+      background-color: #565656;
+      font-size: 22px;
+      font-family: '微软雅黑';
+      border: none;
+      padding: 6px;
+    }
+    .block {
+      margin: 20px;
+      padding: 26px;
+      background-color: #fff;
+      border-radius: 6px;
+      .status-view {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #565656;
+        font-size: 30px;
+        padding-bottom: 31px;
+        border-bottom: 2px solid #EEEEEE;
+        .status-txt1 {
+          margin-right: 33px;
+        }
+        .status-txt2 {
+          margin-right: 33px;
+          color: #1E3468;
+        }
+        .status-txt3 {
+          margin-right: 33px;
+          color: #B9B9B9;
+        }
+        .rightIcon {
+          display: block;
+          width: 17px;
+          height: 20px;
+          flex-shrink: 0;
+        }
+      }
+      .goods-view {
+        display: flex;
+        align-items: center;
+        margin: 30px 0 0;
+        .goods-pic {
+          display: block;
+          width: 120px;
+          height: 120px;
+          border-radius: 6px;
+          margin-right: 20px;
+          flex-shrink: 0;
+        }
+        .goods-info {
+          width: 100%;
+          .goods-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #172B4D;
+            font-size: 24px;
+            .goods-title {
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 1;
+              overflow: hidden;
+            }
+            .goods-price {
+              color: #1E3468;
+              flex-shrink: 0;
+            }
+          }
+          .goods-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #1E3468;
+            font-size: 22px;
+            margin-top: 20px;
+            .yuan {
+              text-decoration: line-through;
+            }
+            .kan {
+              color: #565656;
+            }
+          }
+        }
+      }
+      .btn-view {
+        overflow: hidden;
+        border-top: 2px solid #EEEEEE;
+        padding-top: 26px;
+        margin-top: 30px;
+        .btn {
+          float: right;
+          width: 218px;
+          height: 64px;
+          line-height: 62px;
+          color: #fff;
+          font-size: 24px;
+          text-align: center;
+          background: rgba(30, 52, 104, 1);
+          border-radius: 6px;
+        }
+        .buy {
+          color: #1E3468;
+          background-color: #EAEEF6;
+          margin-right: 22px;
+        }
+      }
+    }
+  }
+}

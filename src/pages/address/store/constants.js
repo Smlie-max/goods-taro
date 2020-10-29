@@ -1,0 +1,3 @@
+export const CHANGE_ADDRESS_DATA = 'address/CHANGE_ADDRESS_DATA';
+export const CHANGE_DEFAULT_ADDRESS = 'address/CHANGE_DEFAULT_ADDRESS';
+export const CHOICE_ADDRESS = 'address/CHOICE_ADDRESS';

@@ -1,0 +1,303 @@
+.UserIndex {
+  // padding-bottom: 200px;
+  button {
+    border: none;
+  }
+  .user-info {
+    position: relative;
+    height: 428px; // padding-top: 78px;
+    box-sizing: border-box;
+    .user-bg {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    .top-btn-view {
+      z-index: 1;
+      padding-top: 21px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-top: 108px;
+      .top-btn-icon {
+        display: block;
+        width: 36px;
+        height: 36px;
+        margin-right: 27px;
+      }
+    }
+    .level-view {
+      color: #fff;
+      margin: 18px 40px 0;
+      position: relative;
+      margin-top: 18px;
+      z-index: 1;
+      .level-name {
+        font-size: 30px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        button {
+          padding: 0;
+          margin: 0;
+          background: none;
+          margin-left: 20px;
+          color: #fff;
+          line-height: 1;
+          font-size: 30px;
+          border: none;
+          outline: none;
+        }
+      }
+      .wallet {
+        margin-top: 32px;
+        display: flex;
+        align-items: center;
+        .balance,
+        .integral {
+          color: #1e3468;
+          font-size: 24px;
+          background-color: #B0BBCB;
+          border-radius: 22px;
+          height: 44px;
+          line-height: 44px;
+          padding: 0 25px;
+          margin-right: 24px;
+        }
+      }
+    }
+    .member-card {
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      display: block;
+      width: 210px;
+      height: 131px;
+      animation: jump 4s infinite;
+      z-index: 1;
+    }
+    @keyframes jump {
+      0% {
+        transform: translate(0px, 0px);
+      }
+      50% {
+        transform: translate(0px, -10px);
+      }
+      100% {
+        transform: translate(0px, 0px);
+      }
+    }
+    .user {
+      position: absolute;
+      right: 24px;
+      bottom: -66px;
+      color: #fff;
+      font-size: 30px;
+      z-index: 3;
+      overflow: hidden;
+      .nickname {
+        margin-right: 29px;
+        margin-top: -30px;
+      }
+      .thumb-view {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .thumb {
+          display: block;
+          width: 140px;
+          height: 140px;
+          border: 2px solid #fff;
+          margin-bottom: 15px;
+        }
+      }
+      .autograph {
+        color: #AAAAAA;
+        font-size: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        min-width: 140px;
+        max-width: 300px;
+        float: right;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+  .user-my-order {
+    color: #313131;
+    font-size: 30px;
+    padding: 0 23px;
+    padding-top: 90px;
+    padding-bottom: 30px;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    .order-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .all {
+        color: #9f9f9f;
+        font-size: 24px;
+        position: relative;
+        padding-right: 30px;
+        &:after,
+        &:before {
+          width: 0;
+          height: 0;
+          border: 10px solid transparent;
+          border-left-color: #BFBFBF;
+          position: absolute;
+          content: '';
+          right: 0;
+          top: 50%;
+          margin-top: -8px;
+        }
+        &:after {
+          border-left-color: #fff;
+          right: 4px;
+          top: 50%;
+          margin-top: -8px;
+        }
+      }
+    }
+    .list {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .item {
+        text-align: center;
+        color: #1E3468;
+        font-size: 22px;
+        position: relative;
+        .order-icon {
+          display: block;
+          width: 54px;
+          height: 54px;
+          margin: 0 auto 26px;
+        }
+        .num {
+          position: absolute;
+          right: -15px;
+          top: -15px;
+          background-color: #1E3468;
+          color: #fff;
+          font-size: 18px;
+          height: 32px;
+          min-width: 32px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 30px;
+        }
+      }
+    }
+  }
+  .line {
+    background-color: #F1F1F1;
+    height: 22px;
+  }
+  .service-view {
+    padding: 23px 32px;
+    color: #313131;
+    font-size: 30px;
+    font-weight: 400;
+    .service-list {
+      display: flex;
+      flex-wrap: wrap;
+      color: #313131;
+      font-size: 22px;
+      .item-list {
+        text-align: center;
+        width: 25%;
+        margin: 28px 0;
+      }
+      button {
+        background: none;
+        color: #313131;
+        font-size: 22px;
+        border: none;
+        outline: none;
+        &:after {
+          border: none;
+        }
+      }
+      .button-hover {
+        background: none;
+      }
+      .item {
+        display: inline-block;
+      }
+      .icon {
+        display: block;
+        margin: 0 auto 26px;
+        width: 82px;
+        height: 82px;
+      }
+    }
+  }
+  .getUserModal {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    .userModalMask {
+      background: #fff;
+      width: 550rpx;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border-radius: 5px;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      border-radius: 10rpx;
+      text-align: center;
+      padding-bottom: 50rpx;
+      .title {
+        font-size: 32rpx;
+        color: #919090;
+        font-weight: bold;
+        padding: 40rpx 0;
+      }
+      .tips {
+        margin-top: 20rpx;
+        font-size: 24rpx;
+        color: #919090;
+      }
+      .tips1,
+      .tips2 {
+        color: #484848;
+        font-size: 24rpx;
+        margin-top: 15rpx;
+      }
+      .tips3 {
+        font-size: 24rpx;
+        color: #bbb;
+        margin-top: 15rpx;
+      }
+      button {
+        width: 400rpx;
+        height: 90rpx;
+        border-radius: 100rpx;
+        background: #ffd700;
+        line-height: 90rpx;
+        margin: 40rpx auto 0;
+        font-size: 26rpx;
+        color: #101010;
+      }
+      button:after {
+        border: none;
+      }
+    }
+  }
+}

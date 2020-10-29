@@ -1,0 +1,100 @@
+.Logistics {
+  padding-top: 78px;
+  min-height: 100vh;
+  background-color: #F4F6F8;
+  box-sizing: border-box;
+  .info {
+    padding: 0 29px;
+    background-color: #fff;
+    margin: 21px 0;
+    .items {
+      display: flex;
+      align-items: center;
+      height: 90px;
+      &:first-child {
+        border-bottom: 1PX solid #E5E9EA;
+      }
+      .left {
+        color: #36404A;
+        font-size: 24px;
+        width: 30%;
+        font-weight: bold;
+      }
+      .right {
+        color: #999999;
+        font-weight: bold;
+        font-size: 24px;
+      }
+    }
+  }
+  .timeline {
+    background-color: #fff;
+    padding: 40px 30px;
+    .timeline-block {
+      display: flex;
+      align-items: center;
+      position: relative;
+      .right {
+        padding: 0 0 60px 70px;
+        position: relative;
+        &:before {
+          position: absolute;
+          content: '';
+          left: 20px;
+          top: 26px;
+          width: 2PX;
+          background-color: #CFCFCF;
+          height: 100%;
+        }
+        .dot {
+          position: absolute;
+          left: 11px;
+          top: 26px;
+          width: 20px;
+          height: 20px;
+          background-color: #CBCBCB;
+          border-radius: 50%;
+          box-shadow: 0px 0px 0px 8px rgba(203, 203, 203, 0.44);
+        }
+        .active {
+          background-color: #ffffff;
+          box-shadow: 0px 0px 0px 8px rgba(30, 52, 104, 0.44);
+        }
+        .txt {
+          line-height: 36px;
+          color: #222222;
+          font-size: 22px;
+        }
+        .time {
+          color: #999;
+          margin-top: 6px;
+          font-size: 20px;
+        }
+      }
+    }
+    .timeline-block:first-child {
+      .right {
+        &:before {
+          top: 26px;
+        }
+      }
+    }
+    .timeline-block:last-child {
+      .right {
+        &:before {
+          top: 0;
+          height: 0;
+        }
+      }
+    }
+  }
+  .empty{
+    background-color: #fff;
+    margin-top: 20px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 200px;
+  }
+}

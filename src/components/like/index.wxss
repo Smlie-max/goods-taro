@@ -1,0 +1,75 @@
+.likeWrap {
+  background-color: #fff;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+.likeWrap .line {
+  position: absolute;
+  bottom: 0;
+  left: -50%;
+  width: 200%;
+  height: 17px;
+  display: flex;
+  z-index: -1;
+}
+.likeWrap .title-block {
+  padding: 40px 0;
+  text-align: center;
+}
+.likeWrap .en-title {
+  font-size: 24px;
+  font-weight: 400;
+  color: #868484;
+  text-align: center;
+}
+.likeWrap .cn-title {
+  font-size: 31px;
+  font-weight: 400;
+  color: #565656;
+  margin: 10px auto 0;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+}
+.likeWrap .like-pic {
+  display: block;
+  width: 249px;
+  height: 75px;
+  margin: 0 auto;
+}
+.likeWrap .like-list {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 2vw;
+}
+.likeWrap .like-item-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 1vw;
+  width: 30vw;
+  margin-top: 34px;
+}
+.likeWrap .like-item-block .goods-pic-block {
+  display: block;
+  width: 30vw;
+  height: 30vw;
+}
+.likeWrap .like-item-block .goods-name-block {
+  margin: 17px 0 17px;
+  color: #292929;
+  font-size: 22px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 48px;
+  line-height: 24px;
+  text-align: left;
+}
+.likeWrap .like-item-block .goods-price-block {
+  color: #1D3566;
+  font-size: 24px;
+}

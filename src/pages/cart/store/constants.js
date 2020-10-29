@@ -1,0 +1,9 @@
+export const GET_CART_DATA = 'cart/GET_CART_DATA';
+export const GOODS_CHOICE = 'cart/GOODS_CHOICE';
+export const CHANGE_CART_DATA = 'cart/CHANGE_CART_DATA';
+export const CHANGE_COUNT_DATA = 'cart/CHANGE_COUNT_DATA';
+export const SELECT_DEL_MERCH = 'cart/SELECT_DEL_MERCH';
+export const SELECT_DEL_GOODS = 'cart/SELECT_DEL_GOODS';
+export const SELECT_DEL_ALL = 'cart/SELECT_DEL_ALL';
+export const REMOVE_GOODS = 'cart/REMOVE_GOODS';
+export const COLLECT_GOODS = 'cart/COLLECT_GOODS';

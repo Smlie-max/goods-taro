@@ -1,0 +1,262 @@
+.SignIn {
+  min-height: 100vh;
+  padding-bottom: 20px;
+  background-color: #F1F1F1;
+  max-width: 100vw;
+  overflow-x: hidden;
+  .banner_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    transform: scale(1.2);
+  }
+  .banner {
+    padding: 105px 0;
+    text-align: center;
+    position: relative;
+    height: 500px;
+    box-sizing: border-box;
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #fff;
+      font-size: 24px;
+      position: relative;
+      z-index: 2;
+      padding: 0 0 0 21px;
+      .my-integral {
+        display: flex;
+        align-items: center;
+        .icon {
+          display: block;
+          width: 35px;
+          height: 35px;
+          flex-shrink: 0;
+          margin-right: 9px;
+        }
+      }
+      .notice {
+        display: flex;
+        align-items: center;
+        .tip {
+          margin-right: 9px;
+        }
+      }
+    }
+    .my-switch {
+      background: none !important;
+      padding: 0 !important;
+      transform: scale(0.7);
+      .at-switch,
+      .at-switch__container {
+        background: none !important;
+        padding: 0 !important;
+      }
+      .weui-switch,
+      .weui-switch-cp__box {
+        height: 22PX !important;
+        width: 42PX !important;
+      }
+      .weui-switch:before,
+      .weui-switch-cp__box:before {
+        height: 20PX !important;
+        background-color: #F7F4F4 !important;
+      }
+      .weui-switch:after,
+      .weui-switch-cp__box:after {
+        width: 20PX !important;
+        height: 20PX !important;
+        background-color: #F7F4F4 !important;
+      }
+    }
+    .sign-btn {
+      background-color: #fff;
+      color: #1E3468;
+      font-size: 30px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 100px;
+      margin: 20px auto 20px;
+      position: relative;
+      z-index: 2;
+    }
+    .tips {
+      width: 261px;
+      background: rgba(255, 255, 255, .5);
+      border-radius: 34px;
+      padding: 10px 30px;
+      text-align: center;
+      color: #1E3468;
+      font-size: 22px;
+      line-height: 28px;
+      margin: 30px auto 0;
+      position: relative;
+      z-index: 2;
+    }
+    .calendar-day {
+      position: relative;
+      min-width: 100px;
+      min-height: 100px;
+      display: inline-block;
+      .calendarBg {
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+      .orderday {
+        position: relative;
+        z-index: 3;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        font-size: 18px;
+        color: #fff;
+        height: 100px;
+        padding: 20px;
+        box-sizing: border-box;
+        .counts {
+          font-size: 30px;
+          font-weight: bold;
+          margin-bottom: -5px;
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+  .calendar {
+    background-color: #fff;
+    border-radius: 5px;
+    margin: -60px 20px 0;
+    box-sizing: border-box;
+    padding: 38px 40px;
+    position: relative;
+    padding-bottom: 10px;
+    z-index: 2;
+    .row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 38px;
+    }
+    .row:last-child {
+      margin-bottom: 0;
+    }
+    .day-view {
+      flex: 1;
+      text-align: center;
+      .integral {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background: rgba(247, 244, 244, 1);
+        border-radius: 50%;
+        margin: 0 auto 20px;
+        color: #B0B1B0;
+        font-size: 22px;
+        text-align: center;
+        line-height: 50px;
+        .tag {
+          position: absolute;
+          right: -8px;
+          bottom: -8px;
+          width: 14PX;
+          height: 14PX;
+        }
+      }
+      .day {
+        color: #434343;
+        font-size: 24px;
+        text-align: center;
+      }
+    }
+  }
+  .open {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 10px auto 0;
+  }
+  .roate {
+    transform: rotate(180deg);
+  }
+  .coupon-view {
+    background-color: #fff;
+    padding: 39px 0 0;
+    margin: 20px;
+    text-align: center;
+    .en {
+      color: #868484;
+      font-size: 24px;
+    }
+    .cn {
+      color: #333333;
+      font-size: 30px;
+    }
+    .coupon-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 29px;
+      .list {
+        width: 284px;
+        height: 197px;
+        position: relative;
+        margin: 0 34px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .couponBg {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 9;
+        }
+        .num {
+          color: #fff;
+          font-size: 26px;
+          z-index: 10;
+          position: relative;
+        }
+        .enough,
+        .type {
+          color: #fff;
+          font-size: 18px;
+          margin-top: 9px;
+          z-index: 10;
+          position: relative;
+          width: 100%;
+        }
+        .type {
+          margin-top: 12px;
+          padding-top: 14px;
+        }
+        .type:before {
+          content: '';
+          position: absolute;
+          width: 70%;
+          background: #fff;
+          height: 2px;
+          left: 15%;
+          top: 0;
+        }
+      }
+    }
+  }
+  .adv {
+    margin: 20px;
+    background-color: #fff;
+    .adv-img {
+      display: block;
+      width: 100%;
+    }
+  }
+}

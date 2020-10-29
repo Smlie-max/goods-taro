@@ -1,0 +1,62 @@
+.SwiperGroups {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  .box {
+    width: 410px;
+    z-index: 0;
+    position: relative;
+  
+  }
+  .box .club {
+    width: 410px;
+    position: absolute;
+    // transform-origin: center center;
+    font-size: 24px;
+    border: 15px  solid #ffffff;
+    line-height: 40px;
+    overflow: hidden;
+    text-align: center;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 5px 7px 0px rgba(110, 110, 110, 0.39);
+ 
+    box-sizing: border-box;
+  }
+
+  .club .img {
+    height: 514px;
+    width: 100%;
+    
+    display: block;
+  }
+  .club .tips {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+  }
+  .dot-view {
+    display: flex;
+    align-items: center;
+    margin-top: 621px;
+    justify-content: center;
+    .dot {
+      display: block;
+      width: 14px;
+      height: 14px;
+      background: #A0A2A4;
+      margin-right: 20px;
+      border-radius: 50%;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .active {
+      background-color: #20335F;
+    }
+  }
+}

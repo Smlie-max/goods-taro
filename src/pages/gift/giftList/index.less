@@ -1,0 +1,126 @@
+.giftList{
+	.navbar{
+		width:100%;
+		left: 0;
+		top: 78px;
+		line-height: 60px;
+		height:60px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		background:rgba(31,53,105,1);
+		display: flex;
+		align-items: center;
+		position: fixed;
+		z-index: 99;
+		.btn{
+			flex: 1;
+			color: rgba(255, 255, 255, .5);
+			font-size: 30px;
+			text-align: center;
+		}
+		.active{
+			color: #fff;
+			position: relative;
+			&:after{
+				position:absolute;
+				bottom: -20px;
+				width: 34px;
+				height: 8px;
+				background-color: #fff;
+				content: '';
+				left: 50%;
+				margin-left: -17px;
+			}
+		}
+	}
+	.scrollview{
+		margin-top: 160px;
+		box-sizing: border-box;
+	}
+	::-webkit-scrollbar {
+		display: none;
+	}
+	.order-list{
+		background-color: #fff;
+		box-shadow:4px 1px 59px 0px rgba(9,26,49,0.07);
+		border-radius:6px;
+		box-sizing: border-box;
+		margin: 30px 20px;
+		padding-bottom: 33px;
+	}
+	.list-top{
+		overflow: hidden;
+		padding: 36px 36px 36px 0;
+		.logo{
+			display: inline-block;
+			width: 181px;
+			height: 42px;
+			margin-right: 16px;
+			float: left;
+		}
+		.order-num{
+			float: left;
+			color: #565656;
+			font-size: 24px;
+			line-height: 42px;
+		}
+		.order-status{
+			color: #1E3468;
+			font-size: 30px;
+			float: right;
+		}
+	}
+	.detail{
+		margin: 0 24px 24px;
+		box-sizing: border-box;
+		background:#F7F8FA;
+		padding: 20px;
+		.pic-view{
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			.pic{
+				display: block;
+				width: 90px;
+				height: 90px;
+				margin-right: 20px;
+			}
+		}
+		.total-view{
+			margin-top: 50px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			color: #565656;
+			font-size: 22px;
+			.total-price{
+				color: #1E3468;
+				font-size: 30px;
+			}
+		}
+	}
+	.operation-view{
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		margin-top: 25px;
+		font-size: 24px;
+		.operation-btn{
+			width:218px;
+			height:64px;
+			line-height: 64px;
+			text-align:center;
+			border:2px solid rgba(203,209,222,1);
+			border-radius:6px;
+			margin-right: 20px;
+		}
+		.operation-btn:first-child{
+			background:rgba(250,251,252,1);
+			color: #1E3468;
+		}
+		.operation-btn:last-child{
+			background:rgba(30,52,104,1);
+			color: #fff;
+		}
+	}
+}

@@ -1,0 +1,111 @@
+.ChooseCoupon {
+  .coupon {
+    position: relative;
+    background-color: #fff;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    .left {
+      width: 30%;
+      position: relative;
+      color: #fff;
+      font-size: 30px;
+      font-weight: bold;
+      background-color: #1E3468;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      justify-content: center;
+      flex-direction: column;
+      &:before {
+        position: absolute;
+        content: '';
+        border-radius: 50%;
+        width: 16PX;
+        height: 16PX;
+        background: #f8f8f8;
+        top: -8PX;
+        right: -8PX;
+      }
+      &:after {
+        position: absolute;
+        content: '';
+        border-radius: 50%;
+        width: 16PX;
+        height: 16PX;
+        background: #f8f8f8;
+        bottom: -8PX;
+        right: -8PX;
+      }
+      .desc {
+        font-size: 22px;
+      }
+    }
+    .right {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #333;
+      font-size: 28px;
+      margin-left: 20px;
+      .time {
+        margin-top: 10px;
+        color: #a0a0a0;
+        font-size: 22px;
+      }
+      .btn {
+        border-radius: 100px;
+        width: 140px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        color: #1E3468;
+        font-size: 22px;
+        border: 1PX solid #1E3468;
+      }
+    }
+  }
+  .coupon:before,
+  .coupon:after {
+    content: '';
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+  .coupon:before {
+    border-right: 10px dotted #f8f8f8;
+    left: -5px;
+    position: relative;
+    z-index: 2;
+  }
+  .coupon:after {
+    border-left: 10px dotted #f8f8f8;
+    right: -5px;
+    position: relative;
+    z-index: 2;
+  }
+  .loading {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .no-use {
+    text-align: center;
+    color: #222222;
+    font-size: 30px;
+    line-height: 80px;
+    height: 80px;
+    background-color: #fff;
+    position: fixed !important;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 1PX solid #e0e0e0;
+    z-index: 811;
+  }
+}
